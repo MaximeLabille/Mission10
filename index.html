@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission 10</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <h1>Mission 10 - Facture</h1>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Article:</th>
+                    <th scope="col">Prix:</th>
+                    <th scope="col">Quantité:</th>
+                    <th scope="col">Résultat:</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+                <tr>
+                    <th scope="row"><input id="t1-1" placeholder="Nom de l'article" type="text" maxlength="25"/></th>
+                    <td><input id="t1-2" placeholder="0" value="0" min="0" type="number" /></td>
+                    <td><input id="t1-3" placeholder="0" value="0" min="0" type="number" /></td>
+                    <td><input id="t1-4" disabled placeholder="0" value="0" type="text" /></td>
+                </tr>
+            </tbody>
+            <tr id="buttons">
+                <td><button id="addline">ajouter une ligne</button></td>
+                <td><button id="submit">résultat</button></td>
+                <td><button id="reset">rénitialiser</button></td>
+                <td><button id="autofill">autofill</button></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <span>Remise :</span>
+                    <input class="smallinputs" style="width: 3em" id="remise" type="number" value="0" min="0" max="100" />
+                    <span>%</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <span>Taxe :</span>
+                    <input class="smallinputs" style="width: 3em" id="taxe" type="number" value="0" min="0" max="100" />
+                    <span>%</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <span>Frais de port :</span>
+                    <input class="smallinputs" style="width: 3em" id="frais-ports" type="number" value="0" min="0" />
+                    <span>€</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <span>Total :</span>
+                    <input class="smallinputs" style="width: 3em"  id="t-total" type="text" value="0" disabled />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--IGNOREZ CA--><style>.a {transition: all 300ms;white-space: nowrap;max-width: 50px;overflow-x: hidden;opacity: 0.1;position: fixed;bottom: 0;right: 0;margin: 4px;padding: 8px;background-color: #110c0c;border: 4px solid #1eb854;border-radius: 8px;}.a:hover {opacity: 1;max-width:999px;padding-left: 32px;padding-right: 32px;}</style><div class="a"><a href="/" style="color: white;">Retour a maximelabille.github.io</a></div>
+</body>
+
+</html>
